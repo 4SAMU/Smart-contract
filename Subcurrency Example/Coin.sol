@@ -4,7 +4,7 @@ pragma solidity ^0.8.4;
 contract Coin {
     //The keyword "public" makes variables accessible from other contracts
     address public minter;
-    mapping(address=>uint) public balances;
+    mapping(address=>uint) public balances; //creates a public state variable
 
     //Events allow clients to react to specific contracts you declare
     event Sent(address from, address to, uint amount);
